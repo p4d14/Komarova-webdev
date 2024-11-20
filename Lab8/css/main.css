@@ -1,0 +1,297 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.header {
+	background: rgb(0,212,255);
+	background: linear-gradient(180deg, rgba(0,212,255,1) 0%, rgba(25,120,255,1) 73%, rgba(54,121,198,1) 100%);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.containermine {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.wrapper-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;	
+}
+
+.offer {
+	width: 450px;
+}
+
+.offer__title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-bottom: 20px;
+	align-items: center;
+	color: white;	
+}
+
+.offer__span {
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
+	align-items: center;
+	color: white;	
+}
+
+.offer__text {
+	font-size: 20px;
+	align-items: center;
+	color: white;	
+}
+
+.surprise {
+	font-weight: 700;
+	font-size: 40px;
+	align-items: center;
+	color: rgba(0, 255, 34, 0);
+	position: fixed;
+	top: 45%;
+	left: 50%;
+}
+
+.surprisepic {
+	width: 15%;
+	position: fixed;
+	opacity: 0;
+	top: 55%;
+	left: 60%;
+}
+
+.button {
+	display: block;
+	width: 220px;
+	height: 55px;
+	background-color: rgb(238, 201, 80);
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.img1 {
+	width: 500px;
+}
+
+.logo {
+	transition-duration: 2s;
+}
+
+.logo:hover {
+	background-color: rgba(255, 255, 255, 0.219);
+	box-shadow:0 0 60px #ffffff;
+}
+
+.body {
+	background-color: white;
+}
+
+.body__query {
+	color: black;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: relative;
+	animation-name: moving;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	25% {
+		left: 50px;
+		top: 0px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
+
+.order {
+    padding-top: 20px;
+}
+
+#sendOrder {
+    text-align: center;
+    display: block;
+    text-align: center;
+	width: 100%;
+	margin-top: 15px;
+	height: 40px;
+	padding-top: 5px;
+	background-color: rgb(255, 196, 0);
+	border: 2px solid black;
+
+}
+
+    #sendOrder:hover {
+        cursor: pointer;
+    }
+
+.body__box {
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.body__box__block {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 250px;
+}
+
+.body__box__block__title {
+	color: black;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.body__box__block__text {
+	text-align: center;
+	animation-name: coloring;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	font-size: 18px;
+}
+
+@keyframes coloring {
+	0% {
+		color: black;
+	}
+	50% {
+		color: blue
+	}
+	100% {
+		color: black;
+	}
+}
+
+.body__form {
+	background-color: rgb(207, 207, 207);
+	padding-bottom: 50px;
+}
+
+.body__form__box {
+	width: 1024px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.form {
+	width: 400px;
+	flex-direction: column;
+}
+
+input {
+	width: 100%;
+	margin-top: 15px;
+	height: 40px;
+}
+
+input::placeholder {
+	padding-left: 30px;
+	color: rgb(139, 139, 139);
+}
+
+.button2 {
+	width: 100%;
+	margin-top: 15px;
+	height: 40px;
+	background-color: rgb(255, 196, 0);
+	
+}
+
+.tail {
+	background: rgb(0,212,255);
+	background: linear-gradient(180deg, rgba(0,212,255,1) 0%, rgba(25,120,255,1) 73%, rgba(54,121,198,1) 100%);
+}
+
+.ps {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	transition-duration: 2s;
+}
+
+.ps:hover {
+	color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 1200px)
+{
+	.img1 {
+		width: 500px;
+	}
+}
+@media screen and (max-width: 1199px)
+{
+	.img1 {
+		width: 450px;
+	}
+}
+@media screen and (max-width: 991px)
+{
+	.img1 {
+		margin-top: 100px;
+		width: 380px;
+	}
+}
+@media screen and (max-width: 800px)
+{
+	.img1 {
+		margin-top: 120px;
+		width: 350px;
+	}
+}
