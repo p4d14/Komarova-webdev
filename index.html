@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="offer">
+                        <img class="logo" src="img/logo.png" alt="">
+                        <h1 class="offer__title mt-5">С помощью нас Вы сможете создать то, о чём</h1>
+                        <span class="offer__span"> желаете!</span>
+                        <p class="offer__text">Наши возможности и опыт позволят Вам достичь огромного успеха. Мы верим в Вас! И знаем это на все 100%. Вас не остановить!</p>
+                        <a href="#" class="button">Узнать больше...</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img1 animate__animated animate__bounce" src="img/header-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="container">
+            <div class="body__query py-3" id="body__query" onclick="getOutOfMySwamp()";><p>Что Вам необходимо?</p></div>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <img src="img/f3.png" alt="">
+                    <div class="body__box__block__title" id="body__box__block__title">Первый блок</div>
+                    <div class="body__box__block__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <img src="img/f4.png" alt="">
+                    <div class="body__box__block__title" id="body__box__block__title2">Второй блок</div>
+                    <div class="body__box__block__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <img src="img/f5.png" alt="">
+                    <div class="body__box__block__title" id="body__box__block__title3">Третий блок</div>
+                    <div class="body__box__block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="body__form" id="body__form">
+        <div class="container">
+            <div class="body__query py-3" id="body__query2" ><p>Форма заявки на обучение</p></div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                        <form  id="form" action="#" method="POST" enctype="multypart/form-data">
+                        
+                        <input class="form-control col-md-4" id="first" type="text" value="" placeholder="Имя" 
+                            onchange="checkName();" required />
+                        <div class="col-md-8 align-items-start"><span id="name_Check"></span></div>
+                        <br>
+                        <input class="form-control col-md-4" id="mail"  type="text" value="" placeholder="Введите свой E-mail"
+                            onchange="checkMail();" required />
+                        <div class="col-md-8 align-items-start"><span id="mail_Check"></span></div>
+                        <br>
+                        <input class="form-control col-md-4" id="tel" type="text" value="" placeholder="x-xxx-xxx-xx-xx" 
+                            onchange="checkTel();" required />
+                        <div class="col-md-8 align-items-start"><span id="tel_Check"></span></div>
+                        <br>
+                        <div class="row justify-content-between">
+                            <div class="col-md-6 d-flex align-items-center">Форма обучения:</div>
+                            <div class="col-md-6 ">
+                                <select class="form-control" name="studying" id="studying" required>
+                                    <option>Очное</option>
+                                    <option>Заочное</option>
+                                    <option>Очно-заочное</option>
+                                </select>
+                            </div>  
+                        </div>  
+                        <div class="row">
+                            <div class="col-md-12 order"><span id="sendOrder" onclick="outputData();">Отправить заявку!</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row col-lg-4 col-md-6 col-sm-12">
+                    <div class="orderSummary">
+                        <span id="summary"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body__form" id="body__form2">
+        <div class="container">
+            <div class="body__query py-3" id="body__query3"><p>Форма заказа обратного звонка</p></div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <form action="#" method="POST" enctype="multypart/form-data">
+                        <input type="text" name="username" id="" value="" placeholder="Имя">
+                        <input type="text" name="mail" id="" value="" placeholder="Введите свой E-mail">
+                        <input type="tel" name="telephone_number" id="tel" value="" placeholder="Телефон">        
+                        <input type="text" name="information" id="" value="" placeholder="Какая тема вас интересует?">        
+                        <button type="submit" class="button2">Отправить вопрос!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tail" id="tail">
+        <div class="container">
+            <div class="ps" id="joking" onclick="joke()";>@ Всё на этом сайте защищено</div>
+        </div>
+    </div>
+
+    <div class="surprise" id="swamp" >Get out of my swamp!!!</div>
+    <img class="surprisepic" id="swamper" src="img/shrk.jpg"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/JavaScript.js"></script>
+</body>
+</html>
