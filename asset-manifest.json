@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Komarova-webdev/static/css/main.7cfa05e1.css",
+    "main.js": "/Komarova-webdev/static/js/main.d4aa949f.js",
+    "static/media/rai_all.png": "/Komarova-webdev/static/media/rai_all.e2e96bfc1f249a40739c.png",
+    "static/media/misha_all.png": "/Komarova-webdev/static/media/misha_all.ce9e8a8d76dad3b8fbc5.png",
+    "static/media/theysleep.png": "/Komarova-webdev/static/media/theysleep.133567085ea596e3ea83.png",
+    "static/media/photo_2024-04-15_13-32-19.jpg": "/Komarova-webdev/static/media/photo_2024-04-15_13-32-19.16c67b42073cdf818d44.jpg",
+    "static/media/19.jpg": "/Komarova-webdev/static/media/19.3e725e888c51226b92ba.jpg",
+    "static/media/11.jpg": "/Komarova-webdev/static/media/11.3dc8c655dae06de671e8.jpg",
+    "static/media/20.jpg": "/Komarova-webdev/static/media/20.3d757145a865b831b054.jpg",
+    "static/media/15.jpg": "/Komarova-webdev/static/media/15.1b53de03278aa17475e4.jpg",
+    "static/media/16.jpg": "/Komarova-webdev/static/media/16.b8de21fd9c0a69bc08d8.jpg",
+    "static/media/17.jpg": "/Komarova-webdev/static/media/17.f5374d44a9630448ebe0.jpg",
+    "static/media/photo_2023-10-12_02-33-44.jpg": "/Komarova-webdev/static/media/photo_2023-10-12_02-33-44.f3cc221c21de6c542d9f.jpg",
+    "static/media/18.jpg": "/Komarova-webdev/static/media/18.897436492b4192c456e4.jpg",
+    "static/media/8.jpg": "/Komarova-webdev/static/media/8.cd513f441b082f8a8e3b.jpg",
+    "static/media/13.jpg": "/Komarova-webdev/static/media/13.27ae41a2c8f72264f5b8.jpg",
+    "static/media/14.jpg": "/Komarova-webdev/static/media/14.5769a7d75144b773136d.jpg",
+    "static/media/4.jpg": "/Komarova-webdev/static/media/4.ac9b6150e3118dcb70b8.jpg",
+    "static/media/9.jpg": "/Komarova-webdev/static/media/9.f1041a226959f04bde8a.jpg",
+    "static/media/6.jpg": "/Komarova-webdev/static/media/6.33e6f9aa3f243cd05301.jpg",
+    "static/media/3.jpg": "/Komarova-webdev/static/media/3.f5b6f9bde5e5ee76839b.jpg",
+    "static/media/12.jpg": "/Komarova-webdev/static/media/12.19d2298d0037cdd97c92.jpg",
+    "static/media/7.jpg": "/Komarova-webdev/static/media/7.4bc2d4975c6a2586a646.jpg",
+    "static/media/mishasad.jpg": "/Komarova-webdev/static/media/mishasad.ea1f2c119674de20ed6d.jpg",
+    "static/media/5.jpg": "/Komarova-webdev/static/media/5.319c0dea433c09cba2cc.jpg",
+    "static/media/10.jpg": "/Komarova-webdev/static/media/10.54e4db45d26de4f4e978.jpg",
+    "static/media/2.jpg": "/Komarova-webdev/static/media/2.4f00076901a04f6a11c2.jpg",
+    "static/media/1.jpg": "/Komarova-webdev/static/media/1.aab10b6469a6646d8404.jpg",
+    "static/media/vk.png": "/Komarova-webdev/static/media/vk.6ec661900972d9ac85a0.png",
+    "static/media/tg.png": "/Komarova-webdev/static/media/tg.2f1af0f57b1d0eae1702.png",
+    "index.html": "/Komarova-webdev/index.html",
+    "main.7cfa05e1.css.map": "/Komarova-webdev/static/css/main.7cfa05e1.css.map",
+    "main.d4aa949f.js.map": "/Komarova-webdev/static/js/main.d4aa949f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cfa05e1.css",
+    "static/js/main.d4aa949f.js"
+  ]
+}
