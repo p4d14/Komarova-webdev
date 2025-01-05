@@ -1,0 +1,367 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.inner_container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  height: auto; /* Высота зависит от содержимого */
+  align-items: center;
+  display: flex;
+}
+
+/* Контейнер с горизонтальным скроллом */
+.horizontal-scroll-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+/* Горизонтальный скролл */
+.horizontal-scroll {
+  display: flex;
+}
+
+/* Элементы скролла */
+.scroll-item2 {
+  position: relative;
+  flex: 0 0 100vw; /* Каждый элемент занимает всю ширину экрана */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/theysleep.png");
+  background-attachment: fixed;
+}
+
+/* Картинки */
+.scroll-image {
+  width: 100%; /* Растягивается на всю ширину элемента */
+  height: auto; /* Сохраняет пропорции 16:9 */
+}
+
+.scroll-image2 {
+  width: 100%; /* Растягивается на всю ширину элемента */
+  height: auto; /* Сохраняет пропорции 16:9 */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #624575;
+  min-height: 200vh;
+}
+
+.containersurvey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #624575;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: 200vh;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .container {
+    min-height: 120vh;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .container {
+    min-height: 130vh;
+  }
+  .containersurvey {
+    min-height: 100vh;
+  }
+  
+}
+
+.comicpage {
+  text-align: center;
+  width: 100vw;
+  background: rgb(255,113,113);
+  background: radial-gradient(circle, rgba(255,113,113,1) 0%, rgba(98,69,117,1) 100%);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.pageIndicator {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.comicpages {
+  display: inline-block;
+}
+
+.fishtank {
+  display: flex;
+  width: 100%;
+  height:100%;
+}
+
+.fishray {
+  width: 100%;
+  padding: 0,0,0,0;
+  position:static;
+  opacity: 100%;
+  animation: inversing 30s infinite;
+}
+@keyframes inversing {
+  0% {
+    filter:invert(0);
+  }
+  75% {
+    filter:invert(1);
+  }
+  100% {
+    filter:invert(0);
+  }
+}
+
+.contacts {
+  height: 3vw;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.comic_navigation {
+  display: flex;
+  width: 100%;
+  min-height: 10vh;
+  background-color: #624575;
+  height: 8vw;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: row;
+  z-index: 10;
+}
+
+.coverart_config {
+  min-height: 10vh;
+  top: 0;
+  left: 0;
+  height: 8vw;
+}
+
+.coverart_config:hover {
+  animation: lighter 2s infinite;
+}
+@keyframes lighter {
+  0% {
+    filter:contrast(1);
+    filter:saturate(1);
+  }
+  50% {
+    filter:contrast(1.2);
+    filter:saturate(1.2);
+  }
+  100% {
+    filter:contrast(1);
+    filter:saturate(1);
+  }
+}
+
+
+.comicstart {
+  position: absolute;  
+
+  top: 10%;
+  left: 60%;
+  font-family: "BioRhyme", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 4vw;
+  color: white;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.comicstart::before {
+    content: "Начать путешествие";
+    position: absolute;  
+    font-family: "BioRhyme", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    
+    -webkit-text-stroke: 2vw #D35609;
+    font-size: 4vw;
+    color: white;
+    z-index: -1;
+}
+
+.form_body {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #624575;
+}
+
+.formbox {
+  position: absolute;
+  font-family: "BioRhyme", serif;
+  color: aliceblue;
+  top: 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 5px auto;
+  margin-bottom: 20px;
+  z-index: 2;
+  background-image: url("./img/mishasad.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.title {
+  text-Align: center;
+  margin-Bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-Direction: column;
+}
+
+.formGroup {
+  margin-Bottom: 15px;
+}
+
+.label {
+  margin-Bottom: 5px;
+  font-Weight: bold;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-Radius: 4px;
+  font-Size: 14px;
+  width: 98%;
+}
+
+.select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-Radius: 4px;
+  font-Size: 14px;
+  width: 100%;
+}
+
+.button {
+  padding: 10px;
+  background-Color: #1b1f63;
+  color: white;
+  font-Size: 16px;
+  border: none;
+  border-Radius: 4px;
+  cursor: pointer;
+}
+
+.scroll-image2:hover {
+  animation: blurring 3s infinite;
+}
+  @keyframes blurring {
+    0% {
+      filter: blur(0px);
+    }
+    50% {
+      filter: blur(2px);
+    }
+    100% {
+      filter: blur(0px);
+    }
+  }
+
+  .scroll-image:hover {
+    animation: rotate 4s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    5% {
+      transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+  }
+
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2vw;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  .scroll-left {
+    left: 10px;
+  }
+
+  .scroll-right {
+    right: 10px;
+  }
+
+  .raitext {
+    position: absolute;  
+    top: 10%;
+    left: 70%;
+    font-family: "Pacifico", serif;
+    font-size: 6vw;
+    background: rgb(0,212,255);
+    background: linear-gradient(101deg, rgba(0,212,255,1) 0%, rgba(54,121,198,1) 100%);
+    background-clip: text;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+
+  .mishatext {
+    position: absolute;  
+    top: 10%;
+    left: 70%;
+    font-family: "Caveat", serif;
+    font-size: 6vw;
+    background: rgb(0,212,255);
+    background: radial-gradient( rgb(255, 174, 0) 0%, rgb(89, 43, 255) 100%);
+    background-clip: text;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+
+
