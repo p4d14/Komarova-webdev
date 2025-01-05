@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Komarova-webdev/static/css/main.7cfa05e1.css",
-    "main.js": "/Komarova-webdev/static/js/main.d03cb05c.js",
+    "main.js": "/Komarova-webdev/static/js/main.d4aa949f.js",
     "static/media/rai_all.png": "/Komarova-webdev/static/media/rai_all.e2e96bfc1f249a40739c.png",
     "static/media/misha_all.png": "/Komarova-webdev/static/media/misha_all.ce9e8a8d76dad3b8fbc5.png",
     "static/media/theysleep.png": "/Komarova-webdev/static/media/theysleep.133567085ea596e3ea83.png",
@@ -32,10 +32,10 @@
     "static/media/tg.png": "/Komarova-webdev/static/media/tg.2f1af0f57b1d0eae1702.png",
     "index.html": "/Komarova-webdev/index.html",
     "main.7cfa05e1.css.map": "/Komarova-webdev/static/css/main.7cfa05e1.css.map",
-    "main.d03cb05c.js.map": "/Komarova-webdev/static/js/main.d03cb05c.js.map"
+    "main.d4aa949f.js.map": "/Komarova-webdev/static/js/main.d4aa949f.js.map"
   },
   "entrypoints": [
     "static/css/main.7cfa05e1.css",
-    "static/js/main.d03cb05c.js"
+    "static/js/main.d4aa949f.js"
   ]
 }
